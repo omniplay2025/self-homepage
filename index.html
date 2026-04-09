@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuqing Bie | Agentic AI Researcher</title>
+    <meta
+      name="description"
+      content="PhD researcher at BUPT building long-horizon agents across LLMs, reinforcement learning, and multimodal systems."
+    />
+    <meta name="theme-color" content="#0e1516" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fuqing Bie | Agentic AI Researcher" />
+    <meta
+      property="og:description"
+      content="Research homepage for Fuqing Bie, focused on LLM agents, RL, MARL, multimodal systems, and agentic research infrastructure."
+    />
+    <meta property="og:image" content="./个人照.jpg" />
+    <meta property="og:image:alt" content="Portrait of Fuqing Bie" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand-mark">FB</span>
+          <span class="brand-copy">
+            <strong>Fuqing Bie</strong>
+            <span>Agentic AI Researcher</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#research">Research</a>
+          <a class="nav-link" href="#impact">Impact</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#publications">Publications</a>
+          <a class="nav-link" href="#academic">Academic</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" id="topbar-email" href="mailto:biehenry9@gmail.com">Email</a>
+      </header>
+
+      <main>
+        <section class="hero reveal is-visible" id="top">
+          <div class="hero-copy">
+            <p class="eyebrow">Research Homepage</p>
+            <div class="hero-heading">
+              <h1 id="profile-name">Fuqing Bie</h1>
+              <p class="hero-cn" id="profile-cn-name">别福庆</p>
+            </div>
+            <p class="hero-role" id="profile-role"></p>
+            <p class="hero-summary" id="profile-summary"></p>
+
+            <div class="hero-meta">
+              <div>
+                <span class="meta-label">Affiliation</span>
+                <p id="profile-affiliation"></p>
+              </div>
+              <div>
+                <span class="meta-label">Current Track</span>
+                <p id="profile-track"></p>
+              </div>
+              <div>
+                <span class="meta-label">Focus</span>
+                <p id="profile-focus"></p>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button button-primary" id="hero-email" href="mailto:biehenry9@gmail.com">Email</a>
+              <a
+                class="button button-secondary"
+                id="hero-github"
+                href="https://github.com/fuqingbie"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </div>
+
+            <div class="hero-highlights" id="hero-highlights"></div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-photo-panel">
+              <div class="photo-overlay-card">
+                <p class="photo-kicker">Current research arc</p>
+                <p class="photo-claim" id="profile-claim"></p>
+              </div>
+              <div class="photo-stack"></div>
+              <img class="hero-photo" src="./个人照.jpg" alt="Portrait of Fuqing Bie" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="about">
+          <div class="section-head">
+            <p class="eyebrow">About</p>
+            <h2>Researching agents that can reason, act, and improve over long horizons.</h2>
+            <p id="about-biography"></p>
+          </div>
+        </section>
+
+        <section class="section reveal" id="research">
+          <div class="section-head">
+            <p class="eyebrow">Research Pillars</p>
+            <h2>Three threads anchor the way I build systems and benchmarks.</h2>
+            <p>
+              My work moves between foundation model post-training, interactive agent design,
+              and reinforcement learning infrastructure, with a bias toward problems that demand
+              both algorithmic depth and production realism.
+            </p>
+          </div>
+          <div class="research-grid" id="research-grid"></div>
+        </section>
+
+        <section class="section reveal" id="impact">
+          <div class="section-head">
+            <p class="eyebrow">Selected Impact</p>
+            <h2>Signals of scale, contribution, and research velocity.</h2>
+            <p>
+              These highlights span accepted papers, open-source traction, model-building work,
+              and benchmark releases across academia and industry.
+            </p>
+          </div>
+          <div class="impact-grid" id="impact-grid"></div>
+        </section>
+
+        <section class="section reveal" id="experience">
+          <div class="section-head">
+            <p class="eyebrow">Experience</p>
+            <h2>Industry and research roles connected by one theme: usable intelligence.</h2>
+            <p>
+              I have worked across cloud research, frontier model teams, open-source RL, and
+              simulation-heavy environments, usually at the boundary where systems must turn
+              research ideas into reliable capabilities.
+            </p>
+          </div>
+          <ol class="timeline" id="experience-timeline"></ol>
+        </section>
+
+        <section class="section reveal" id="projects">
+          <div class="section-head">
+            <p class="eyebrow">Featured Projects</p>
+            <h2>Systems, benchmarks, and open-source work that define the portfolio.</h2>
+            <p>
+              The emphasis here is not only model quality, but also tooling, evaluation design,
+              and deployment-minded research infrastructure.
+            </p>
+          </div>
+          <div class="project-grid" id="project-grid"></div>
+        </section>
+
+        <section class="section reveal" id="publications">
+          <div class="section-head">
+            <p class="eyebrow">Publications</p>
+            <h2>Representative papers first, then a complete research record.</h2>
+            <p>
+              Ongoing submissions remain visible, but every entry carries an explicit status so the
+              page stays accurate about what is accepted, published, or still under review.
+            </p>
+          </div>
+
+          <div class="publication-featured" id="featured-publications"></div>
+
+          <div class="publication-list-wrap">
+            <div class="subsection-head">
+              <p class="subsection-label">Full Publications</p>
+              <p class="subsection-copy">
+                Complete list across agents, multimodal systems, and reinforcement learning.
+              </p>
+            </div>
+            <div class="publication-list" id="publication-list"></div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="academic">
+          <div class="section-head">
+            <p class="eyebrow">Academic Blocks</p>
+            <h2>Education, service, teaching, and research-adjacent output.</h2>
+            <p>
+              Supporting academic work is kept compact here so the homepage stays narrative-led
+              while still functioning as a complete professional record.
+            </p>
+          </div>
+          <div class="academic-grid" id="academic-grid"></div>
+        </section>
+      </main>
+
+      <footer class="footer reveal" id="contact">
+        <div class="footer-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="footer-heading"></h2>
+            <p class="footer-copy" id="footer-copy"></p>
+          </div>
+          <div class="footer-links">
+            <a class="button button-primary" id="footer-email" href="mailto:biehenry9@gmail.com">Email</a>
+            <a
+              class="button button-secondary"
+              id="footer-github"
+              href="https://github.com/fuqingbie"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+        <div class="footer-meta">
+          <p id="footer-signoff"></p>
+          <p class="footer-credit">Built as a static GitHub Pages site.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
