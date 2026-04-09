@@ -167,6 +167,11 @@ select {
   position: relative;
 }
 
+.hero-copy-compact {
+  display: grid;
+  gap: 18px;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   font-size: 0.82rem;
@@ -207,9 +212,34 @@ select {
 }
 
 .hero-role {
-  margin: 18px 0 0;
+  margin: 0;
   font-size: clamp(1.1rem, 2vw, 1.55rem);
   color: #f9f3e8;
+}
+
+.hero-inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-inline-list-secondary {
+  gap: 12px;
+}
+
+.hero-inline-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  border: 1px solid rgba(203, 175, 148, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.hero-inline-link {
+  color: #f5e5cf;
 }
 
 .hero-summary {
@@ -441,6 +471,15 @@ select {
   max-width: 78ch;
 }
 
+.section-head-simple {
+  max-width: none;
+  margin-bottom: 18px;
+}
+
+.section-head-simple h2 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+}
+
 .section-head h2,
 .footer h2 {
   font-size: clamp(2.1rem, 5vw, 3.35rem);
@@ -467,12 +506,70 @@ select {
   border-radius: var(--radius-lg);
 }
 
+.prose-card {
+  padding: 26px;
+}
+
+.cv-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.cv-entry {
+  padding: 24px;
+}
+
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.cv-entry-main {
+  min-width: 0;
+}
+
+.cv-entry h3 {
+  margin-bottom: 6px;
+  font-size: 1.68rem;
+}
+
+.cv-entry-subtitle {
+  margin: 0;
+  color: #ddd2c0;
+  line-height: 1.7;
+}
+
+.entry-side {
+  min-width: 180px;
+  text-align: right;
+  color: var(--muted);
+}
+
+.entry-link {
+  color: var(--text);
+}
+
+.entry-link:hover {
+  color: #f5e5cf;
+}
+
 .card h3,
 .impact-card h3,
 .publication-card h3 {
   font-size: 2rem;
   line-height: 1.05;
   margin-bottom: 12px;
+}
+
+.section-head.section-head-simple h2 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+}
+
+.card.cv-entry h3 {
+  margin-bottom: 6px;
+  font-size: 1.68rem;
 }
 
 .impact-card {
@@ -549,13 +646,6 @@ select {
 
 .timeline-card {
   padding: 26px;
-}
-
-.timeline-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  margin-bottom: 16px;
 }
 
 .timeline-org {
@@ -650,6 +740,94 @@ select {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin-bottom: 30px;
+}
+
+.pub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  counter-reset: publication-counter;
+}
+
+.pub-item {
+  position: relative;
+  padding: 22px 24px;
+  padding-left: 62px;
+}
+
+.pub-item::before {
+  counter-increment: publication-counter;
+  content: counter(publication-counter) ".";
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  color: var(--sand);
+  font-weight: 800;
+}
+
+.pub-title {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.pub-authors {
+  margin: 10px 0 0;
+  line-height: 1.72;
+  color: var(--muted);
+}
+
+.pub-meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.pub-meta {
+  margin: 0;
+  line-height: 1.72;
+  color: #ddd2c0;
+}
+
+.pub-venue {
+  font-style: italic;
+}
+
+.pub-link {
+  color: #f5e5cf;
+  word-break: break-all;
+}
+
+.pub-extra {
+  color: var(--muted);
+}
+
+.list-card {
+  padding: 24px;
+}
+
+.simple-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.simple-list li {
+  line-height: 1.78;
+}
+
+.simple-list li + li {
+  margin-top: 8px;
+}
+
+.simple-list-plain a {
+  color: #f5e5cf;
 }
 
 .publication-card {
@@ -765,6 +943,11 @@ select {
   border-top: 1px solid var(--line);
 }
 
+.footer-grid-simple {
+  padding-top: 0;
+  border-top: 0;
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -858,6 +1041,17 @@ select {
   }
 
   .timeline-meta {
+    min-width: 0;
+    text-align: left;
+  }
+
+  .cv-entry-header,
+  .pub-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .entry-side {
     min-width: 0;
     text-align: left;
   }

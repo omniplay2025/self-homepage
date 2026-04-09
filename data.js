@@ -2,418 +2,354 @@ window.siteData = {
   profile: {
     name: "Fuqing Bie",
     cnName: "别福庆",
-    role: "PhD Researcher in Agentic AI",
-    affiliation: "Beijing University of Posts and Telecommunications (BUPT)",
-    track: "PhD in Computer Science and Technology, expected graduation 2027.06",
-    focus: "LLM Agents, RL, MARL, multimodal systems, and large-model applications",
+    role: "PhD @ BUPT",
+    phone: "+86-178-6232-6340",
     email: "biehenry9@gmail.com",
     github: "https://github.com/fuqingbie",
-    summary:
-      "I build long-horizon agentic systems at the intersection of large language models, reinforcement learning, and multimodal interaction, with research shaped by both academic labs and production model teams.",
-    claim:
-      "From DeepResearch-style information seeking to GUI-agent benchmarks and post-training infrastructure, I work on systems that turn large models into usable decision-making engines.",
-    biography:
-      "I am a PhD student at Beijing University of Posts and Telecommunications, with research and internship experience across Alibaba Cloud, Zhipu AI, 4Paradigm, Huaru Technology, and the Space Supercomputing Division of CETC. My work spans long-horizon web research agents, multimodal post-training, reinforcement learning systems, and benchmark design for interactive environments. As a core contributor to OpenRL Lab and a contributor to GLM-4.1V and GLM-4V-Plus, I care about building agentic workflows that are not only algorithmically strong, but also scalable, measurable, and grounded in real deployment constraints.",
-    footerHeading: "Open to research collaborations and research internship conversations.",
-    footerCopy:
-      "If you are working on agentic reasoning, multimodal decision-making, or post-training for interactive systems, I would be glad to connect.",
-    footerSignoff:
-      "Based in Beijing, with experience across academia, cloud research, foundation models, and open-source RL.",
+    githubLabel: "fuqingbie",
+    academicItems: [
+      "PhD @ BUPT",
+      "Expected Graduation: 2027.6",
+      "Research Focus: Agent, RL , MARL",
+    ],
+    claim: "PhD @ BUPT · Expected Graduation: 2027.6 · Research Focus: Agent, RL , MARL",
   },
-  highlights: [
+  biography:
+    "I am a Ph.D. student at Beijing University of Posts and Telecommunications (started in 2023). During this period, I have worked as a research intern at Alibaba Cloud, Zhipu.ai, 4Paradigm Inc., Huaru Technology, and the Space Supercomputing Division of CETC. My research focuses on LLM Agents, Reinforcement Learning, Multi-Agent Reinforcement Learning, and Large Model Applications. I am also a core contributor to the OpenRL Lab (1.7k+ GitHub stars) and have contributed to the GLM-4.1V (2.3k+ GitHub stars) and GLM-4V-Plus models. I am actively seeking a research internship in AGI, aiming to leverage my hands-on experience in agentic workflows and LLM post-training to build scalable foundation models and tackle real-world, long-horizon challenges.",
+  experience: [
     {
-      label: "ACL Findings",
-      value: "2026",
-      note: "Table-as-Search on long-horizon agentic information seeking",
-    },
-    {
-      label: "NeurIPS",
-      value: "2025",
-      note: "Complex card-game reasoning with large language models",
-    },
-    {
-      label: "OmniGUI",
-      value: "5,500+",
-      note: "Benchmark downloads shortly after release",
-    },
-    {
-      label: "OpenRL",
-      value: "#2",
-      note: "Overall code contributor to the framework project",
-    },
-  ],
-  researchAreas: [
-    {
-      title: "Agentic Information Seeking",
-      description:
-        "I study long-horizon research agents that must plan, retrieve, organize evidence, and synthesize grounded reports. This includes DeepResearch-style workflows and structured formulations such as Table-as-Search.",
-      tags: ["Agent", "Accepted"],
-    },
-    {
-      title: "RL and Multi-Agent Systems",
-      description:
-        "My background in reinforcement learning and MARL informs how I think about policy improvement, environment interaction, strategic coordination, and robust decision-making under long-horizon constraints.",
-      tags: ["RL", "MARL", "Open Source"],
-    },
-    {
-      title: "Multimodal and GUI Agents",
-      description:
-        "I work on VLM post-training, omni-modal benchmarks, and GUI-agent evaluation, with an emphasis on turning multimodal perception into reliable action in interactive environments.",
-      tags: ["VLM", "Benchmark", "Submission"],
-    },
-  ],
-  impactPoints: [
-    {
-      value: "ACL Findings 2026",
-      title: "Table-as-Search",
-      note:
-        "Co-developed a framework that reframes long-horizon web research as structured table completion.",
-    },
-    {
-      value: "5,500+ Downloads",
-      title: "OmniGUI benchmark launch",
-      note:
-        "Released an omni-modal smartphone GUI-agent benchmark that gained traction quickly after open-source release.",
-    },
-    {
-      value: "820+ Stars",
-      title: "OpenRL framework",
-      note:
-        "Ranked second in overall code contributions while helping build one of the better-known open RL frameworks.",
-    },
-    {
-      value: "GLM-4.1V / GLM-4V-Plus",
-      title: "Model-building contribution",
-      note:
-        "Worked on multimodal post-training infrastructure and DPO pipelines for production-grade vision-language models.",
-    },
-    {
-      value: "NeurIPS 2025",
-      title: "LLMs for strategic games",
-      note:
-        "Co-authored work on whether large language models can master complex card-game reasoning.",
-    },
-  ],
-  experiences: [
-    {
-      org: "Alibaba Cloud, Qwen Team",
+      organization: "Alibaba - Alibaba Cloud (阿里巴巴-阿里云)",
+      organizationUrl: "https://www.aliyun.com",
+      location: "Beijing, China",
       role: "Qwen Agent Researcher",
-      period: "Oct 2025 - Present",
-      location: "Beijing, China",
-      featuredOutput: "Featured output: Table-as-Search (ACL Findings 2026) and OmniGUI (ECCV 2026 submission).",
+      period: "October 2025 - Present",
       bullets: [
-        "Researching long-horizon agentic information seeking for DeepResearch-style systems, including planning, iterative retrieval, evidence organization, and report synthesis.",
-        "Co-developed Table-as-Search, a formulation that turns multi-step web research into structured table completion.",
-        "Expanded into omni-modal GUI-agent evaluation by building the OmniGUI benchmark for interactive smartphone environments.",
+        "Researched long-horizon agentic information seeking for DeepResearch-style agents; co-developed the Table-as-Search framework, reframing multi-step web research as structured table completion (Accepted by ACL 2026).",
+        "Architected and optimized core components for planning, iterative retrieval, evidence organization, and report synthesis within the DeepResearch workflows (Targeting NeurIPS 2026).",
+        "Extended the research scope to omni-modal GUI-agent evaluation, connecting web agents with multimodal interactive environments; authored the OmniGUI benchmark (ECCV 2026 Submission), with its open-source dataset surpassing 5,500+ downloads within half a month of release.",
       ],
-      tags: ["Agent", "Accepted", "Benchmark", "Submission"],
     },
     {
-      org: "Zhipu AI",
+      organization: "Zhipu.ai (智谱 AI)",
+      organizationUrl: "https://www.zhipuai.cn",
+      location: "Beijing, China",
       role: "Large Model Researcher",
-      period: "Jun 2024 - Sep 2025",
-      location: "Beijing, China",
-      featuredOutput: "Featured output: post-training work for GLM-4V-Plus and infrastructure contributions merged into glm-train-dev for GLM-4.1V.",
+      period: "June 2024 - September 2025",
       bullets: [
-        "Executed DPO post-training for GLM-4V-Plus to improve multimodal model performance.",
-        "Built core infrastructure for multimodal post-training, with code merged into the training stack used for GLM-4.1V.",
-        "Contributed to the Qingyan text-to-image model and an AIGC-powered Jet Li agent experience.",
+        "Executed DPO post-training for GLM-4V-Plus models (2.7k+ GitHub stars) to enhance performance.",
+        "Engineered the infrastructure for the multi-modal post-training framework, with core code merged into the glm-train-dev repository to support the GLM-4.1V model.",
+        "Participated in developing the Zhipu Qingyan text-to-image generation model.",
+        "Engineered an AIGC-powered intelligent agent based on the persona of public figure Jet Li.",
       ],
-      tags: ["VLM", "Agent"],
     },
     {
-      org: "4Paradigm",
+      organization: "4Paradigm Inc. (第四范式)",
+      organizationUrl: "https://www.4paradigm.com",
+      location: "Beijing, China",
       role: "Algorithm Researcher",
-      period: "Apr 2023 - Feb 2024",
-      location: "Beijing, China",
-      featuredOutput: "Featured output: OpenRL and OpenRL Lab open-source reinforcement learning ecosystem.",
+      period: "April 2023 - February 2024",
       bullets: [
-        "Served as a core contributor to OpenRL Lab, a prominent open-source community for reinforcement learning research.",
-        "Engineered the openrl framework and ranked second in overall code contributions.",
-        "Helped turn research ideas into reusable training infrastructure for broader RL experimentation.",
+        "Served as a core contributor to the OpenRL Lab (1.7k+ GitHub stars), a leading open-source community for reinforcement learning research.",
+        "Engineered the openrl framework (820+ stars, 80+ forks), ranking 2nd in overall code contributions.",
       ],
-      tags: ["RL", "MARL", "Open Source"],
     },
     {
-      org: "Huaru Technology",
-      role: "Reinforcement Learning Algorithm Intern",
-      period: "Apr 2022 - Aug 2022",
+      organization: "Huaru Technology (华如科技)",
+      organizationUrl: "http://www.huaru.com/",
       location: "Beijing, China",
-      featuredOutput: "Featured output: XSim, an early Chinese military-simulation platform for multi-agent reinforcement learning.",
+      role: "Reinforcement Learning Algorithm Intern, AI Department",
+      period: "April 2022 - August 2022",
       bullets: [
-        "Worked as a key developer for XSim, a multi-agent reinforcement learning platform tailored for military simulation.",
-        "Focused on simulation-grounded algorithm development rather than toy benchmark settings.",
+        "Acted as a key developer for XSim, recognized as China's pioneering multi-agent reinforcement learning platform tailored for military simulation.",
       ],
-      tags: ["RL", "MARL"],
     },
     {
-      org: "CETC Space Supercomputing Division",
+      organization: "Space Supercomputing Division, CETC Shenfeifan (中国电子集团)",
+      organizationUrl: "",
+      location: "Beijing, China",
       role: "Software Department Intern",
-      period: "Mar 2021 - Jul 2021",
-      location: "Beijing, China",
-      featuredOutput: "Featured output: software development and testing support for a space supercomputing platform.",
+      period: "March 2021 - July 2021",
       bullets: [
-        "Supported the software team in developing and validating applications for the space supercomputing platform.",
-        "Built early experience around system engineering, testing discipline, and infrastructure reliability.",
+        "Supported the software team in developing and testing applications for the space supercomputing platform.",
       ],
-      tags: ["Open Source"],
+    },
+  ],
+  education: [
+    {
+      institution: "Beijing University of Posts and Telecommunications",
+      period: "Sept. 2023 - Present",
+      degree: "Ph.D. in Computer Science and Technology",
+      details: [
+        "Lab: Vision Computing and Intelligent Systems Lab",
+        "Research Focus: Reinforcement Learning, LLM as Agent, Multi-Agent RL, VLM",
+      ],
+    },
+    {
+      institution: "Institute of Automation, Chinese Academy of Sciences (CASIA)",
+      period: "June 2021 - July 2023",
+      degree: "Joint M.S. Training",
+      details: [
+        "Lab: State Key Laboratory of Complex Systems and Intelligence",
+        "Research Focus: Multi-Agent Reinforcement Learning, Cooperative Games",
+      ],
+    },
+    {
+      institution: "China University of Geosciences (Beijing)",
+      period: "Sept. 2020 - July 2023",
+      degree: "M.S. in Electronic Information",
+      details: [],
+    },
+    {
+      institution: "Qufu Normal University",
+      period: "Sept. 2015 - July 2019",
+      degree: "B.E. in Electrical Engineering and Automation",
+      details: [],
     },
   ],
   projects: [
     {
       title: "GLM-4.1V Vision-Language Model",
-      description:
-        "Contributed to the model-training and post-training pipeline behind GLM-4.1V, with practical work centered on infrastructure that production teams could build on.",
+      description: "Contributed to the training and development pipeline of the GLM-4.1V model.",
       link: "https://github.com/zai-org/GLM-V",
-      tag: ["VLM", "Open Source"],
-      note: "Training pipeline and multimodal post-training contribution.",
+      linkLabel: "GitHub",
+    },
+    {
+      title: "Zhipu Qingyan (CogVLM) Text-to-Image Model",
+      description: "A large-scale vision-language model for high-quality image generation.",
+      link: "https://chatglm.cn/main/gdetail/65a232c082ff90a2ad2f15e2",
+      linkLabel: "Website",
     },
     {
       title: "OpenRL: Unified Reinforcement Learning Framework",
-      description:
-        "A reusable RL framework developed in the OpenRL Lab ecosystem, where I ranked second in total code contributions and helped shape the engineering core.",
+      description: "A popular open-source project with 820+ stars and 80+ forks on GitHub.",
       link: "https://github.com/OpenRL-Lab/openrl",
-      tag: ["RL", "MARL", "Open Source"],
-      note: "820+ stars and 80+ forks.",
+      linkLabel: "GitHub",
     },
     {
-      title: "OmniGUI",
-      description:
-        "An omni-modal smartphone benchmark for evaluating GUI agents under richer perceptual and interaction conditions than standard web-only settings.",
+      title: "OmniGUI: GUI Agent Benchmark in Omni-Modal Smartphone Environments",
+      description: "5,500+ downloads within two weeks, continuously rising.",
       link: "https://omni-gui.github.io/",
-      tag: ["Agent", "Benchmark", "Submission"],
-      note: "5,500+ downloads soon after release.",
+      linkLabel: "Website",
     },
     {
-      title: "Jet Li AIGC Agent",
-      description:
-        "An AIGC-powered intelligent agent designed around the persona of Jet Li, combining large-model capabilities with a more character-driven interaction layer.",
+      title: "Zhipu Qingyan AIGC-Powered Intelligent Agent (Jet Li)",
+      description: "An AI agent simulating the persona of a public figure using AIGC technologies.",
       link: "",
-      tag: ["Agent"],
-      note: "Built during Zhipu AI research work.",
+      linkLabel: "",
     },
     {
-      title: "Competition Track Record",
-      description:
-        "Placed 5th globally in the IEEE CoG 2023 Football AI Competition and advanced to the top-8 knockout stage in Tencent's King of Glory AI Competition 2023.",
+      title: "IEEE CoG 2023 Football AI Competition",
+      description: "Achieved 5th Place Globally.",
       link: "http://www.jidiai.cn/compete_detail?compete=36",
-      tag: ["RL", "MARL"],
-      note: "Competitive multi-agent decision-making under high-pressure settings.",
+      linkLabel: "Website",
+    },
+    {
+      title: "King of Glory AI Competition 2023 (Tencent)",
+      description: "Advanced to the Final Knockout Round (Top 8).",
+      link: "https://aiarena.tencent.com/aiarena/zh/match/open-competition-2023",
+      linkLabel: "Website",
     },
   ],
-  publications: [
+  representativePublications: [
     {
       title: "Table-as-Search: Formulate Long-Horizon Agentic Information Seeking as Table Completion",
-      authors:
-        "Tian Lan, Fuqing Bie, Bin Zhu, Qianghuai Jia, Junyang Ren, Qihang Pu, Haijun Li, Longyue Wang, Zhao Xu, Weihua Luo",
-      venue: "ACL Findings",
-      year: 2026,
-      status: "Accepted",
+      authorsHtml:
+        'Tian Lan, <strong><u>Fuqing Bie (Felix Henry)</u></strong>, Bin Zhu, Qianghuai Jia, Junyang Ren, Qihang Pu, Haijun Li, Longyue Wang, Zhao Xu, Weihua Luo.',
+      venue: "ACL Findings 2026",
       link: "https://arxiv.org/abs/2602.06724",
-      featured: true,
-      note: "Long-horizon web research reformulated as structured table completion.",
-      tags: ["Agent", "Accepted"],
+      year: "2026",
+      extra: "",
     },
     {
       title: "OmniGUI: Benchmarking GUI Agents in Omni-Modal Smartphone Environments",
-      authors:
-        "Fuqing Bie, Xiaochen Lin, Jiangyou Zhu, Yang Fan, Bingqian Zhang, Min Chen, Shiyu Huang",
+      authorsHtml:
+        '<strong><u>Fuqing Bie (Felix Henry)</u></strong>, Xiaochen Lin, Jiangyou Zhu, Yang Fan, Bingqian Zhang, Min Chen, Shiyu Huang.',
       venue: "ECCV 2026 Submission",
-      year: 2026,
-      status: "Submission",
       link: "https://omni-gui.github.io/",
-      featured: true,
-      note: "Benchmark and dataset release with 5,500+ downloads shortly after launch.",
-      tags: ["Agent", "Benchmark", "Submission"],
+      year: "2026",
+      extra: "(5,500+ downloads within two weeks, continuously rising)",
     },
     {
       title: "OmniPlay: Benchmarking Omni-Modal Models on Omni-Modal Game Playing",
-      authors:
-        "Fuqing Bie, Shiyu Huang, Xijia Tao, Zhiqin Fang, Leyi Pan, Junzhe Chen, Min Ren, Liuyu Xiang, Zhaofeng He",
+      authorsHtml:
+        '<strong><u>Fuqing Bie</u></strong>, Shiyu Huang, Xijia Tao, Zhiqin Fang, Leyi Pan, Junzhe Chen, Min Ren, Liuyu Xiang, Zhaofeng He.',
       venue: "ICML 2026 Submission",
-      year: 2026,
-      status: "Submission",
       link: "https://arxiv.org/abs/2508.04361",
-      featured: true,
-      note: "Evaluates omni-modal models in game-playing environments that stress decision-making and perception together.",
-      tags: ["Benchmark", "Submission"],
+      year: "2026",
+      extra: "",
     },
     {
       title: "Can Large Language Models Master Complex Card Games?",
-      authors:
-        "Wei Wang, Fuqing Bie, Junzhe Chen, Dan Zhang, Shiyu Huang, Evgeny Kharlamov, Jie Tang",
-      venue: "NeurIPS",
-      year: 2025,
-      status: "Accepted",
+      authorsHtml:
+        'Wei Wang, <strong><u>Fuqing Bie</u></strong>, Junzhe Chen, Dan Zhang, Shiyu Huang, Evgeny Kharlamov, Jie Tang.',
+      venue: "NeurIPS 2025",
       link: "https://arxiv.org/abs/2509.01328",
-      featured: true,
-      note: "Explores strategic reasoning limits and strengths of LLMs in complex card-game settings.",
-      tags: ["Agent", "Accepted"],
+      year: "2025",
+      extra: "",
     },
     {
       title: "OpenRL: A Unified Reinforcement Learning Framework",
-      authors:
-        "Shiyu Huang, Wentse Chen, Yiwen Sun, Fuqing Bie, Wei-Wei Tu",
+      authorsHtml:
+        'Shiyu Huang, Wentse Chen, Yiwen Sun, <strong><u>Fuqing Bie</u></strong>, Wei-Wei Tu.',
       venue: "arXiv preprint",
-      year: 2023,
-      status: "Preprint",
       link: "https://arxiv.org/abs/2312.16189",
-      featured: true,
-      note: "Framework paper for the OpenRL ecosystem.",
-      tags: ["RL", "Open Source", "Preprint"],
+      year: "2023",
+      extra: "(820+ GitHub stars, 80+ forks, ranked 2nd in code contributions)",
+    },
+  ],
+  fullPublications: [
+    {
+      title: "Table-as-Search: Formulate Long-Horizon Agentic Information Seeking as Table Completion",
+      authorsHtml:
+        'Tian Lan, <strong><u>Fuqing Bie (Felix Henry)</u></strong>, Bin Zhu, Qianghuai Jia, Junyang Ren, Qihang Pu, Haijun Li, Longyue Wang, Zhao Xu, Weihua Luo.',
+      venue: "ACL Findings 2026",
+      link: "https://arxiv.org/abs/2602.06724",
+      year: "2026",
+      extra: "",
+    },
+    {
+      title: "OmniGUI: Benchmarking GUI Agents in Omni-Modal Smartphone Environments",
+      authorsHtml:
+        '<strong><u>Fuqing Bie (Felix Henry)</u></strong>, Xiaochen Lin, Jiangyou Zhu, Yang Fan, Bingqian Zhang, Min Chen, Shiyu Huang.',
+      venue: "ECCV 2026 Submission",
+      link: "https://omni-gui.github.io/",
+      year: "2026",
+      extra: "(5,500+ downloads within two weeks, continuously rising)",
+    },
+    {
+      title: "OmniPlay: Benchmarking Omni-Modal Models on Omni-Modal Game Playing",
+      authorsHtml:
+        '<strong><u>Fuqing Bie</u></strong>, Shiyu Huang, Xijia Tao, Zhiqin Fang, Leyi Pan, Junzhe Chen, Min Ren, Liuyu Xiang, Zhaofeng He.',
+      venue: "ICML 2026 Submission",
+      link: "https://arxiv.org/abs/2508.04361",
+      year: "2026",
+      extra: "",
     },
     {
       title: "Omni-RRM: Advancing Omni Reward Modeling via Automatic Rubric-Grounded Preference Synthesis",
-      authors:
-        "Zicheng Kong, Dehua Ma, Zhenbo Xu, Alven Yang, Yiwei Ru, Haoran Wang, Zixuan Zhou, Fuqing Bie, Liuyu Xiang, Huijia Wu, Jian Zhao, Zhaofeng He",
+      authorsHtml:
+        'Zicheng Kong, Dehua Ma, Zhenbo Xu, Alven Yang, Yiwei Ru, Haoran Wang, Zixuan Zhou, <strong><u>Fuqing Bie</u></strong>, Liuyu Xiang, Huijia Wu, Jian Zhao, Zhaofeng He.',
       venue: "ECCV 2026 Submission",
-      year: 2026,
-      status: "Submission",
       link: "https://arxiv.org/html/2602.00846v1",
-      featured: false,
-      note: "",
-      tags: ["VLM", "Submission"],
+      year: "2026",
+      extra: "",
     },
     {
       title: "HMP-Align: Jointly Modeling Human-LLM Traits via Context-Aware Tuning",
-      authors:
-        "Anwen Yang, Jian Zhao, Yuchen Yuan, Dehua Ma, Leyan Wang, Peipei Li, Huijia Wu, Fuqing Bie, Zhaofeng He",
+      authorsHtml:
+        'Anwen Yang, Jian Zhao, Yuchen Yuan, Dehua Ma, Leyan Wang, Peipei Li, Huijia Wu, <strong><u>Fuqing Bie</u></strong>, Zhaofeng He.',
       venue: "IJCAI 2026 Submission",
-      year: 2026,
-      status: "Submission",
       link: "",
-      featured: false,
-      note: "",
-      tags: ["Agent", "Submission"],
+      year: "2026",
+      extra: "",
     },
     {
       title: "Omni-SafetyBench: A Benchmark for Safety Evaluation of Audio-Visual Large Language Models",
-      authors:
-        "Leyi Pan, Zheyu Fu, Yunpeng Zhai, Shuchang Tao, Sheng Guan, Shiyu Huang, Lingzhe Zhang, Zhaoyang Liu, Bolin Ding, Fuqing Bie, Lijie Wen, Aiwei Liu",
+      authorsHtml:
+        'Leyi Pan, Zheyu Fu, Yunpeng Zhai, Shuchang Tao, Sheng Guan, Shiyu Huang, Lingzhe Zhang, Zhaoyang Liu, Bolin Ding, <strong><u>Fuqing Bie (Felix Henry)</u></strong>, Lijie Wen, Aiwei Liu.',
       venue: "ACM MM 2026 Submission",
-      year: 2026,
-      status: "Submission",
       link: "https://arxiv.org/pdf/2508.04361",
-      featured: false,
-      note: "",
-      tags: ["Benchmark", "Submission"],
+      year: "2026",
+      extra: "",
     },
     {
       title: "Simulation-Free PSRO: Removing Game Simulation from Policy Space Response Oracles",
-      authors:
-        "Yingzhuo Liu, Shuodi Liu, Weijun Luo, Fuqing Bie, Yida Wang, Liuyu Xiang, Zhaofeng He",
+      authorsHtml:
+        'Yingzhuo Liu, Shuodi Liu, Weijun Luo, <strong><u>Fuqing Bie</u></strong>, Yida Wang, Liuyu Xiang, Zhaofeng He.',
       venue: "IJCAI 2026 Submission",
-      year: 2026,
-      status: "Submission",
       link: "",
-      featured: false,
-      note: "",
-      tags: ["RL", "Submission"],
+      year: "2026",
+      extra: "",
     },
     {
-      title: "Knowledge-Guided Policy Arbitration: A Hierarchical Cognitive Framework for Safety-Critical Decision-Making under Dynamic Conflicting Objectives",
-      authors:
-        "Fuqing Bie, Xingyang Chang, Leyan Wang, Dehua Ma, Songfu Xu, Shuodi Liu, Yingzhuo Liu, Liuyu Xiang, Zhaofeng He",
-      venue: "Expert Systems with Applications",
-      year: 2025,
-      status: "Published",
+      title: "Can Large Language Models Master Complex Card Games?",
+      authorsHtml:
+        'Wei Wang, <strong><u>Fuqing Bie</u></strong>, Junzhe Chen, Dan Zhang, Shiyu Huang, Evgeny Kharlamov, Jie Tang.',
+      venue: "NeurIPS 2025",
+      link: "https://arxiv.org/abs/2509.01328",
+      year: "2025",
+      extra: "",
+    },
+    {
+      title:
+        "Knowledge-Guided Policy Arbitration: A Hierarchical Cognitive Framework for Safety-Critical Decision-Making under Dynamic Conflicting Objectives",
+      authorsHtml:
+        '<strong><u>Fuqing Bie</u></strong>*, Xingyang Chang*, Leyan Wang, Dehua Ma, Songfu Xu, Shuodi Liu, Yingzhuo Liu, Liuyu Xiang, Zhaofeng.',
+      venue: "Expert Systems with Applications (ESWA), 2025",
       link: "",
-      featured: false,
-      note: "",
-      tags: ["RL", "Published"],
+      year: "2025",
+      extra: "",
     },
     {
       title: "MIRAGE: A Multi-modal Benchmark for Spatial Perception, Reasoning, and Intelligence",
-      authors:
-        "Chonghan Liu, Haoran Wang, Fuqing Bie, Pu Miao, Yajie Zhang, Yu Zhao, Peiran Wu",
+      authorsHtml:
+        'Chonghan Liu, Haoran Wang, <strong><u>Fuqing Bie (Felix Henry)</u></strong>, Pu Miao, Yajie Zhang, Yu Zhao, Peiran Wu.',
       venue: "arXiv preprint",
-      year: 2025,
-      status: "Preprint",
       link: "https://arxiv.org/abs/2505.10604",
-      featured: false,
-      note: "",
-      tags: ["Benchmark", "Preprint"],
+      year: "2025",
+      extra: "",
     },
     {
-      title: "Improving Generalization in Multi-Agent Reinforcement Learning via Complementary Self-supervised Learning",
-      authors:
-        "Fuqing Bie, Shiyu Huang, Yujie Wei, Bingzhen Zhang, Liuyu Xiang",
-      venue: "Knowledge-Based Systems Submission",
-      year: 2025,
-      status: "Submission",
+      title:
+        "Improving Generalization in Multi-Agent Reinforcement Learning via Complementary Self-supervised Learning",
+      authorsHtml:
+        '<strong><u>Fuqing Bie</u></strong>, Shiyu Huang, Yujie Wei, Bingzhen Zhang, Liuyu Xiang.',
+      venue: "Knowledge-Based Systems (KBS) Submission",
       link: "",
-      featured: false,
-      note: "",
-      tags: ["MARL", "Submission"],
+      year: "2025",
+      extra: "",
     },
     {
       title: "CVPReward: Captioning Videos with Process Rewards via Large Multimodal Models",
-      authors:
-        "Song XiXuan, Xiao Liu, Bo Li, Yean Cheng, Fuqing Bie, Junzhe Chen, Leyi Pan, Bo Lin, Shiyu Huang, Yuxiao Dong, Jie Tang",
-      venue: "ICCV",
-      year: 2025,
-      status: "Published",
+      authorsHtml:
+        'Song XiXuan, Xiao Liu, Bo Li, Yean Cheng, <strong><u>Fuqing Bie</u></strong>, Junzhe Chen, Leyi Pan, Bo Lin, Shiyu Huang, Yuxiao Dong, Jie Tang.',
+      venue: "ICCV 2025",
       link: "",
-      featured: false,
-      note: "",
-      tags: ["VLM", "Published"],
+      year: "2025",
+      extra: "",
+    },
+    {
+      title: "OpenRL: A Unified Reinforcement Learning Framework",
+      authorsHtml:
+        'Shiyu Huang, Wentse Chen, Yiwen Sun, <strong><u>Fuqing Bie</u></strong>, Wei-Wei Tu.',
+      venue: "arXiv preprint",
+      link: "https://arxiv.org/abs/2312.16189",
+      year: "2023",
+      extra: "",
     },
     {
       title: "Communication With Gate Attention Network for Multi-Agent Reinforcement Learning",
-      authors:
-        "Qinglai Wei, Shuai Wu, Jie Zhang, Fuqing Bie, Feiyue Wang",
-      venue: "IEEE Transactions on Neural Networks and Learning Systems",
-      year: 2022,
-      status: "Published",
+      authorsHtml:
+        'Qinglai Wei, Shuai Wu, Jie Zhang, <strong><u>Fuqing Bie</u></strong>, Feiyue Wang.',
+      venue: "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
       link: "",
-      featured: false,
-      note: "",
-      tags: ["MARL", "Published"],
+      year: "2022",
+      extra: "",
     },
     {
       title: "Attention Enhanced Policy Sharing Mechanism For Multiagent Reinforcement Learning",
-      authors: "Fuqing Bie, Qinglai Wei",
+      authorsHtml: '<strong><u>Fuqing Bie</u></strong>, Qinglai Wei.',
       venue: "International Journal of Intelligent Control and Systems",
-      year: 2021,
-      status: "Published",
       link: "",
-      featured: false,
-      note: "",
-      tags: ["MARL", "Published"],
+      year: "2021",
+      extra: "",
     },
   ],
-  academicBlocks: [
-    {
-      title: "Education",
-      items: [
-        "PhD in Computer Science and Technology, Beijing University of Posts and Telecommunications, Sept 2023 - Present",
-        "Joint M.S. Training, Institute of Automation, Chinese Academy of Sciences, Jun 2021 - Jul 2023",
-        "M.S. in Electronic Information, China University of Geosciences (Beijing), Sept 2020 - Jul 2023",
-        "B.E. in Electrical Engineering and Automation, Qufu Normal University, Sept 2015 - Jul 2019",
-      ],
-    },
-    {
-      title: "Service",
-      items: [
-        "Reviewer for AAAI 2026, ARR 2026, NeurIPS 2025, ICCV 2025, ACL 2025",
-        "Reviewer for IEEE TNNLS, IEEE TIV, and Neurocomputing",
-      ],
-    },
-    {
-      title: "Teaching",
-      items: [
-        "Teaching Assistant, Intelligent Computing Systems, Fall 2023",
-        "Teaching Assistant, Nonlinear Control, Fall 2020",
-      ],
-    },
-    {
-      title: "Books and IP",
-      items: [
-        "Book: Introduction to Intelligent Computing Systems, ISBN 978-7-115-66923-0",
-        "Patents: Local Strategy Iterative Self-Learning Control Method for Nuclear Power System",
-        "Patents: Parameter Sharing Method for Multi-agent Reinforcement Learning Based on Evolutionary Game",
-        "Software Copyright: Reinforcement Learning Training Platform Based on 5v5 Air Combat",
-      ],
-    },
+  services: [
+    "Reviewer: AAAI 2026, ARR 2026, NeurIPS 2025, ICCV 2025, ACL 2025, IEEE TNNLS, IEEE TIV, Neurocomputing",
+  ],
+  teaching: [
+    "Teaching Assistant, Intelligent Computing Systems, instructed by Prof. Liuyu Xiang (Fall 2023)",
+    "Teaching Assistant, Nonlinear Control, instructed by Prof. Bingji Xu (Fall 2020)",
+  ],
+  bookPublication: [
+    "Introduction to Intelligent Computing Systems (《智能计算系统导论》), ISBN: 978-7-115-66923-0",
+  ],
+  patents: [
+    "A Local Strategy Iterative Self-Learning Control Method for Nuclear Power System",
+    "A Parameter Sharing Method for Multi-agent Reinforcement Learning Based on Evolutionary Game",
+  ],
+  softwareCopyrights: [
+    "Reinforcement Learning Training Platform Based on 5v5 Air Combat",
   ],
 };

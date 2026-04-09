@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fuqing Bie | Agentic AI Researcher</title>
+    <title>Fuqing Bie | Academic CV</title>
     <meta
       name="description"
-      content="PhD researcher at BUPT building long-horizon agents across LLMs, reinforcement learning, and multimodal systems."
+      content="Academic CV and homepage for Fuqing Bie, PhD student at BUPT working on agents, reinforcement learning, MARL, and large model applications."
     />
     <meta name="theme-color" content="#0e1516" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Fuqing Bie | Agentic AI Researcher" />
+    <meta property="og:title" content="Fuqing Bie | Academic CV" />
     <meta
       property="og:description"
-      content="Research homepage for Fuqing Bie, focused on LLM agents, RL, MARL, multimodal systems, and agentic research infrastructure."
+      content="Academic CV and homepage for Fuqing Bie, PhD student at BUPT working on agents, reinforcement learning, MARL, and large model applications."
     />
     <meta property="og:image" content="./个人照.jpg" />
     <meta property="og:image:alt" content="Portrait of Fuqing Bie" />
@@ -37,17 +37,16 @@
           <span class="brand-mark">FB</span>
           <span class="brand-copy">
             <strong>Fuqing Bie</strong>
-            <span>Agentic AI Researcher</span>
+            <span>Academic CV</span>
           </span>
         </a>
         <nav class="nav" aria-label="Primary">
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#research">Research</a>
-          <a class="nav-link" href="#impact">Impact</a>
+          <a class="nav-link" href="#biography">Biography</a>
           <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#education">Education</a>
           <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#publications">Publications</a>
-          <a class="nav-link" href="#academic">Academic</a>
+          <a class="nav-link" href="#representative-publications">Publications</a>
+          <a class="nav-link" href="#services">Service</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
         <a class="nav-cta" id="topbar-email" href="mailto:biehenry9@gmail.com">Email</a>
@@ -55,30 +54,15 @@
 
       <main>
         <section class="hero reveal is-visible" id="top">
-          <div class="hero-copy">
-            <p class="eyebrow">Research Homepage</p>
+          <div class="hero-copy hero-copy-compact">
+            <p class="eyebrow">Academic CV</p>
             <div class="hero-heading">
               <h1 id="profile-name">Fuqing Bie</h1>
               <p class="hero-cn" id="profile-cn-name">别福庆</p>
             </div>
             <p class="hero-role" id="profile-role"></p>
-            <p class="hero-summary" id="profile-summary"></p>
-
-            <div class="hero-meta">
-              <div>
-                <span class="meta-label">Affiliation</span>
-                <p id="profile-affiliation"></p>
-              </div>
-              <div>
-                <span class="meta-label">Current Track</span>
-                <p id="profile-track"></p>
-              </div>
-              <div>
-                <span class="meta-label">Focus</span>
-                <p id="profile-focus"></p>
-              </div>
-            </div>
-
+            <div class="hero-inline-list" id="profile-contact-list"></div>
+            <div class="hero-inline-list hero-inline-list-secondary" id="profile-academic-list"></div>
             <div class="hero-actions">
               <a class="button button-primary" id="hero-email" href="mailto:biehenry9@gmail.com">Email</a>
               <a
@@ -90,14 +74,12 @@
                 >GitHub</a
               >
             </div>
-
-            <div class="hero-highlights" id="hero-highlights"></div>
           </div>
 
           <div class="hero-visual">
             <div class="hero-photo-panel">
               <div class="photo-overlay-card">
-                <p class="photo-kicker">Current research arc</p>
+                <p class="photo-kicker">Academic Snapshot</p>
                 <p class="photo-claim" id="profile-claim"></p>
               </div>
               <div class="photo-stack"></div>
@@ -106,107 +88,104 @@
           </div>
         </section>
 
-        <section class="section reveal" id="about">
-          <div class="section-head">
-            <p class="eyebrow">About</p>
-            <h2>Researching agents that can reason, act, and improve over long horizons.</h2>
-            <p id="about-biography"></p>
+        <section class="section reveal" id="biography">
+          <div class="section-head section-head-simple">
+            <h2>Biography</h2>
           </div>
-        </section>
-
-        <section class="section reveal" id="research">
-          <div class="section-head">
-            <p class="eyebrow">Research Pillars</p>
-            <h2>Three threads anchor the way I build systems and benchmarks.</h2>
-            <p>
-              My work moves between foundation model post-training, interactive agent design,
-              and reinforcement learning infrastructure, with a bias toward problems that demand
-              both algorithmic depth and production realism.
-            </p>
-          </div>
-          <div class="research-grid" id="research-grid"></div>
-        </section>
-
-        <section class="section reveal" id="impact">
-          <div class="section-head">
-            <p class="eyebrow">Selected Impact</p>
-            <h2>Signals of scale, contribution, and research velocity.</h2>
-            <p>
-              These highlights span accepted papers, open-source traction, model-building work,
-              and benchmark releases across academia and industry.
-            </p>
-          </div>
-          <div class="impact-grid" id="impact-grid"></div>
+          <article class="card prose-card">
+            <p id="biography-text"></p>
+          </article>
         </section>
 
         <section class="section reveal" id="experience">
-          <div class="section-head">
-            <p class="eyebrow">Experience</p>
-            <h2>Industry and research roles connected by one theme: usable intelligence.</h2>
-            <p>
-              I have worked across cloud research, frontier model teams, open-source RL, and
-              simulation-heavy environments, usually at the boundary where systems must turn
-              research ideas into reliable capabilities.
-            </p>
+          <div class="section-head section-head-simple">
+            <h2>Experience</h2>
           </div>
           <ol class="timeline" id="experience-timeline"></ol>
         </section>
 
+        <section class="section reveal" id="education">
+          <div class="section-head section-head-simple">
+            <h2>Education</h2>
+          </div>
+          <div class="cv-stack" id="education-list"></div>
+        </section>
+
         <section class="section reveal" id="projects">
-          <div class="section-head">
-            <p class="eyebrow">Featured Projects</p>
-            <h2>Systems, benchmarks, and open-source work that define the portfolio.</h2>
-            <p>
-              The emphasis here is not only model quality, but also tooling, evaluation design,
-              and deployment-minded research infrastructure.
-            </p>
+          <div class="section-head section-head-simple">
+            <h2>Projects</h2>
           </div>
-          <div class="project-grid" id="project-grid"></div>
+          <div class="cv-stack" id="project-list"></div>
         </section>
 
-        <section class="section reveal" id="publications">
-          <div class="section-head">
-            <p class="eyebrow">Publications</p>
-            <h2>Representative papers first, then a complete research record.</h2>
-            <p>
-              Ongoing submissions remain visible, but every entry carries an explicit status so the
-              page stays accurate about what is accepted, published, or still under review.
-            </p>
+        <section class="section reveal" id="representative-publications">
+          <div class="section-head section-head-simple">
+            <h2>Representative Publications as Core Contributor</h2>
           </div>
-
-          <div class="publication-featured" id="featured-publications"></div>
-
-          <div class="publication-list-wrap">
-            <div class="subsection-head">
-              <p class="subsection-label">Full Publications</p>
-              <p class="subsection-copy">
-                Complete list across agents, multimodal systems, and reinforcement learning.
-              </p>
-            </div>
-            <div class="publication-list" id="publication-list"></div>
-          </div>
+          <div id="representative-publications-list"></div>
         </section>
 
-        <section class="section reveal" id="academic">
-          <div class="section-head">
-            <p class="eyebrow">Academic Blocks</p>
-            <h2>Education, service, teaching, and research-adjacent output.</h2>
-            <p>
-              Supporting academic work is kept compact here so the homepage stays narrative-led
-              while still functioning as a complete professional record.
-            </p>
+        <section class="section reveal" id="full-publications">
+          <div class="section-head section-head-simple">
+            <h2>Full Publications</h2>
           </div>
-          <div class="academic-grid" id="academic-grid"></div>
+          <div id="full-publications-list"></div>
+        </section>
+
+        <section class="section reveal" id="services">
+          <div class="section-head section-head-simple">
+            <h2>Services</h2>
+          </div>
+          <article class="card list-card">
+            <ul class="simple-list" id="services-list"></ul>
+          </article>
+        </section>
+
+        <section class="section reveal" id="teaching">
+          <div class="section-head section-head-simple">
+            <h2>Teaching</h2>
+          </div>
+          <article class="card list-card">
+            <ul class="simple-list" id="teaching-list"></ul>
+          </article>
+        </section>
+
+        <section class="section reveal" id="book-publication">
+          <div class="section-head section-head-simple">
+            <h2>Book Publication</h2>
+          </div>
+          <article class="card list-card">
+            <ul class="simple-list" id="book-list"></ul>
+          </article>
+        </section>
+
+        <section class="section reveal" id="patents">
+          <div class="section-head section-head-simple">
+            <h2>Patents</h2>
+          </div>
+          <article class="card list-card">
+            <ul class="simple-list" id="patents-list"></ul>
+          </article>
+        </section>
+
+        <section class="section reveal" id="software-copyrights">
+          <div class="section-head section-head-simple">
+            <h2>Software Copyrights</h2>
+          </div>
+          <article class="card list-card">
+            <ul class="simple-list" id="copyrights-list"></ul>
+          </article>
         </section>
       </main>
 
       <footer class="footer reveal" id="contact">
-        <div class="footer-grid">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2 id="footer-heading"></h2>
-            <p class="footer-copy" id="footer-copy"></p>
-          </div>
+        <div class="section-head section-head-simple">
+          <h2>Contact</h2>
+        </div>
+        <div class="footer-grid footer-grid-simple">
+          <article class="card list-card">
+            <ul class="simple-list simple-list-plain" id="footer-contact-list"></ul>
+          </article>
           <div class="footer-links">
             <a class="button button-primary" id="footer-email" href="mailto:biehenry9@gmail.com">Email</a>
             <a
@@ -218,10 +197,6 @@
               >GitHub</a
             >
           </div>
-        </div>
-        <div class="footer-meta">
-          <p id="footer-signoff"></p>
-          <p class="footer-credit">Built as a static GitHub Pages site.</p>
         </div>
       </footer>
     </div>
