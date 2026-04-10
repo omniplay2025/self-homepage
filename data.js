@@ -74,38 +74,6 @@ window.siteData = {
       ],
     },
   ],
-  education: [
-    {
-      institution: "Beijing University of Posts and Telecommunications",
-      period: "Sept. 2023 - Present",
-      degree: "Ph.D. in Computer Science and Technology",
-      details: [
-        "Lab: Vision Computing and Intelligent Systems Lab",
-        "Research Focus: Reinforcement Learning, LLM as Agent, Multi-Agent RL, VLM",
-      ],
-    },
-    {
-      institution: "Institute of Automation, Chinese Academy of Sciences (CASIA)",
-      period: "June 2021 - July 2023",
-      degree: "Joint M.S. Training",
-      details: [
-        "Lab: State Key Laboratory of Complex Systems and Intelligence",
-        "Research Focus: Multi-Agent Reinforcement Learning, Cooperative Games",
-      ],
-    },
-    {
-      institution: "China University of Geosciences (Beijing)",
-      period: "Sept. 2020 - July 2023",
-      degree: "M.S. in Electronic Information",
-      details: [],
-    },
-    {
-      institution: "Qufu Normal University",
-      period: "Sept. 2015 - July 2019",
-      degree: "B.E. in Electrical Engineering and Automation",
-      details: [],
-    },
-  ],
   projects: [
     {
       title: "GLM-4.1V Vision-Language Model",

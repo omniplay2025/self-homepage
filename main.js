@@ -92,32 +92,6 @@
     )
     .join("");
 
-  const educationList = $("#education-list");
-  educationList.innerHTML = data.education
-    .map(
-      (item) => `
-        <article class="card cv-entry">
-          <div class="cv-entry-header">
-            <div class="cv-entry-main">
-              <h3>${escapeHtml(item.institution)}</h3>
-              <p class="cv-entry-subtitle">${escapeHtml(item.degree)}</p>
-            </div>
-            <div class="entry-side">
-              <p>${escapeHtml(item.period)}</p>
-            </div>
-          </div>
-          ${
-            item.details.length
-              ? `<ul class="bullet-list">${item.details
-                  .map((detail) => `<li>${escapeHtml(detail)}</li>`)
-                  .join("")}</ul>`
-              : ""
-          }
-        </article>
-      `
-    )
-    .join("");
-
   const projectList = $("#project-list");
   projectList.innerHTML = data.projects
     .map(
