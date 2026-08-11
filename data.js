@@ -14,7 +14,7 @@ window.siteData = {
     affiliation: "Beijing University of Posts and Telecommunications",
     researchAreas: ["LLM Agents", "Reinforcement Learning", "Multi-Agent RL", "Multimodal Models"],
     meta: [
-      { label: "Now", value: "Tencent · Qingyun Program" },
+      { label: "Now", value: "Tencent · 青云计划" },
       { label: "PhD", value: "BUPT · Computer Science" },
       { label: "Focus", value: "Agents · RL · MARL · VLM" },
     ],
@@ -25,9 +25,6 @@ window.siteData = {
       { value: "6", label: "Research roles", note: "Industry + applied labs" },
     ],
   },
-
-  biography:
-    "I am a PhD student at Beijing University of Posts and Telecommunications, where I study LLM agents, reinforcement learning, multi-agent systems, and large model applications. My work connects research prototypes with production-minded training and evaluation: from DeepResearch workflows and GUI-agent benchmarks to multimodal post-training and open-source RL infrastructure. I am a core contributor to OpenRL Lab and have contributed to GLM-4.1V and GLM-4V-Plus.",
 
   projects: [
     {
@@ -74,7 +71,7 @@ window.siteData = {
       organizationCn: "腾讯 · 腾讯广告业务线",
       organizationUrl: "https://www.tencent.com/",
       location: "Beijing, China",
-      role: "Agent Researcher · Qingyun Program",
+      role: "Agent Researcher · 青云计划",
       period: "Jul 2026 — Present",
       featured: true,
       bullets: [
@@ -140,33 +137,6 @@ window.siteData = {
       bullets: [
         "Supported development and testing for applications running on the space supercomputing platform.",
       ],
-    },
-  ],
-
-  education: [
-    {
-      school: "Beijing University of Posts and Telecommunications",
-      degree: "PhD · Computer Science and Technology",
-      period: "2023 — Present",
-      note: "Vision Computing and Intelligent Systems Lab · Agents, RL, MARL, VLM",
-    },
-    {
-      school: "Institute of Automation, Chinese Academy of Sciences",
-      degree: "Joint MS Training",
-      period: "2021 — 2023",
-      note: "State Key Laboratory of Complex Systems and Intelligence",
-    },
-    {
-      school: "China University of Geosciences (Beijing)",
-      degree: "MS · Electronic Information",
-      period: "2020 — 2023",
-      note: "Multi-agent reinforcement learning and cooperative games",
-    },
-    {
-      school: "Qufu Normal University",
-      degree: "BE · Electrical Engineering and Automation",
-      period: "2015 — 2019",
-      note: "",
     },
   ],
 
@@ -356,15 +326,4 @@ window.siteData = {
     },
   ],
 
-  services: [
-    "Reviewer · AAAI 2026, ARR 2026, NeurIPS 2025, ICCV 2025, ACL 2025",
-    "Reviewer · IEEE TNNLS, IEEE TIV, Neurocomputing",
-  ],
-
-  otherWork: [
-    "Teaching Assistant · Intelligent Computing Systems (2023) and Nonlinear Control (2020)",
-    "Co-author · Introduction to Intelligent Computing Systems, ISBN 978-7-115-66923-0",
-    "Inventor · Two patents in control systems and multi-agent reinforcement learning",
-    "Software copyright · Reinforcement Learning Training Platform Based on 5v5 Air Combat",
-  ],
 };

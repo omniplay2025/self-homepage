@@ -43,7 +43,6 @@
   setText("#profile-cn-name", profile.cnName);
   setText("#profile-role", profile.role);
   setText("#profile-intro", profile.intro);
-  setText("#biography-text", data.biography);
   setText("#footer-email-label", profile.email);
   setText("#publication-count", `${data.fullPublications.length} papers`);
   setText("#current-year", new Date().getFullYear());
@@ -151,25 +150,6 @@
 
   $("#representative-publications-list").innerHTML = renderPublications(data.representativePublications);
   $("#full-publications-list").innerHTML = renderPublications(data.fullPublications);
-
-  $("#education-list").innerHTML = data.education
-    .map(
-      (item) => `
-        <article class="education-item">
-          <p>${escapeHtml(item.period)}</p>
-          <div>
-            <h4>${escapeHtml(item.school)}</h4>
-            <strong>${escapeHtml(item.degree)}</strong>
-            ${item.note ? `<span>${escapeHtml(item.note)}</span>` : ""}
-          </div>
-        </article>
-      `
-    )
-    .join("");
-
-  const renderPlainList = (items) => items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
-  $("#services-list").innerHTML = renderPlainList(data.services);
-  $("#other-work-list").innerHTML = renderPlainList(data.otherWork);
 
   $("#footer-links").innerHTML = `
     <a href="${escapeHtml(profile.github)}" target="_blank" rel="noreferrer">GitHub ↗</a>

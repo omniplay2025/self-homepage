@@ -822,120 +822,6 @@ summary:focus-visible {
   font-size: 1.2rem;
 }
 
-.background-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.88fr);
-  gap: 16px;
-}
-
-.background-side {
-  display: grid;
-  gap: 16px;
-}
-
-.background-panel {
-  padding: 25px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--white);
-}
-
-.background-panel > h3 {
-  margin: 0 0 23px;
-  padding-bottom: 13px;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.education-item {
-  display: grid;
-  grid-template-columns: 95px minmax(0, 1fr);
-  gap: 18px;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.education-item:first-child {
-  padding-top: 0;
-}
-
-.education-item:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.education-item > p,
-.education-item h4,
-.education-item strong,
-.education-item span {
-  margin: 0;
-}
-
-.education-item > p {
-  color: var(--subtle);
-  font-size: 0.68rem;
-}
-
-.education-item h4 {
-  font-family: "Newsreader", serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  line-height: 1.25;
-}
-
-.education-item strong,
-.education-item span {
-  display: block;
-}
-
-.education-item strong {
-  margin-top: 5px;
-  color: #475467;
-  font-size: 0.72rem;
-}
-
-.education-item span {
-  margin-top: 3px;
-  color: var(--subtle);
-  font-size: 0.66rem;
-}
-
-.plain-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.plain-list li {
-  position: relative;
-  padding: 11px 0 11px 16px;
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.74rem;
-  line-height: 1.55;
-}
-
-.plain-list li:first-child {
-  padding-top: 0;
-}
-
-.plain-list li:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.plain-list li::before {
-  content: "";
-  position: absolute;
-  top: 1.25em;
-  left: 0;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--blue);
-}
-
 .contact-section {
   padding: 78px 0;
   color: var(--white);
@@ -1210,15 +1096,6 @@ summary:focus-visible {
 
   .publication-item h3 {
     font-size: 1.25rem;
-  }
-
-  .education-item {
-    grid-template-columns: 1fr;
-    gap: 5px;
-  }
-
-  .background-panel {
-    padding: 21px;
   }
 
   .contact-section {
