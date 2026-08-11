@@ -6,6 +6,15 @@
   }
 
   const $ = (selector) => document.querySelector(selector);
+  const $$ = (selector) => [...document.querySelectorAll(selector)];
+
+  const escapeHtml = (value) =>
+    String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
 
   const setText = (selector, value) => {
     const node = $(selector);
@@ -21,69 +30,95 @@
     }
   };
 
-  const escapeHtml = (value) =>
-    String(value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#39;");
-
-  const renderExternalLink = (url, label, className = "text-link") => {
+  const externalLink = (url, label, className = "inline-link") => {
     if (!url) {
-      return "";
+      return escapeHtml(label);
     }
 
     return `<a class="${className}" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`;
   };
 
-  const renderSimpleList = (items) =>
-    items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
-
   const profile = data.profile;
 
-  setText("#profile-name", profile.name);
-  setText("#profile-cn-name", profile.cnName);
+  setText("#profile-availability", profile.availability);
+  setText("#profile-intro", profile.intro);
+  setText("#profile-monogram", profile.cnName);
   setText("#profile-role", profile.role);
-  setText("#profile-claim", profile.claim);
   setText("#biography-text", data.biography);
+  setText("#footer-email-label", profile.email);
+  setText("#current-year", new Date().getFullYear());
+  setText("#publication-count", `${data.fullPublications.length} papers`);
 
   setHref("#topbar-email", `mailto:${profile.email}`);
   setHref("#hero-email", `mailto:${profile.email}`);
   setHref("#footer-email", `mailto:${profile.email}`);
   setHref("#hero-github", profile.github);
-  setHref("#footer-github", profile.github);
 
-  const profileContactList = $("#profile-contact-list");
-  profileContactList.innerHTML = `
-    <span class="hero-inline-item">${escapeHtml(profile.phone)}</span>
-    <a class="hero-inline-item hero-inline-link" href="mailto:${escapeHtml(profile.email)}">${escapeHtml(profile.email)}</a>
-    <a class="hero-inline-item hero-inline-link" href="${escapeHtml(profile.github)}" target="_blank" rel="noreferrer">${escapeHtml(profile.githubLabel)}</a>
-  `;
-
-  const academicList = $("#profile-academic-list");
-  academicList.innerHTML = profile.academicItems
-    .map((item) => `<span class="hero-inline-item">${escapeHtml(item)}</span>`)
-    .join("");
-
-  const experienceTimeline = $("#experience-timeline");
-  experienceTimeline.innerHTML = data.experience
+  $("#profile-meta").innerHTML = profile.meta
     .map(
       (item) => `
-        <li class="timeline-item">
-          <div class="timeline-node"></div>
-          <article class="card timeline-card cv-entry">
-            <div class="cv-entry-header">
-              <div class="cv-entry-main">
-                <h3>${renderExternalLink(item.organizationUrl, item.organization, "entry-link") || escapeHtml(item.organization)}</h3>
-                <p class="cv-entry-subtitle">${escapeHtml(item.role)}</p>
+        <div class="hero-meta-item">
+          <span>${escapeHtml(item.label)}</span>
+          <strong>${escapeHtml(item.value)}</strong>
+        </div>
+      `
+    )
+    .join("");
+
+  $("#profile-stats").innerHTML = profile.stats
+    .map(
+      (item, index) => `
+        <article class="stat-item">
+          <span class="stat-index">0${index + 1}</span>
+          <strong>${escapeHtml(item.value)}</strong>
+          <div>
+            <p>${escapeHtml(item.label)}</p>
+            <span>${escapeHtml(item.note)}</span>
+          </div>
+        </article>
+      `
+    )
+    .join("");
+
+  $("#project-list").innerHTML = data.projects
+    .map(
+      (project, index) => `
+        <article class="project-card reveal${index === 0 ? " project-card-featured" : ""}">
+          <div class="project-card-top">
+            <span class="project-number">0${index + 1}</span>
+            <span class="project-type">${escapeHtml(project.type)}</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-impact">${escapeHtml(project.impact)}</p>
+            <h3>${escapeHtml(project.title)}</h3>
+            <p>${escapeHtml(project.description)}</p>
+          </div>
+          <a class="project-link" href="${escapeHtml(project.link)}" target="_blank" rel="noreferrer">
+            ${escapeHtml(project.linkLabel)} <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      `
+    )
+    .join("");
+
+  $("#experience-list").innerHTML = data.experience
+    .map(
+      (item, index) => `
+        <li class="experience-item reveal${item.featured ? " experience-item-current" : ""}">
+          <div class="experience-period">
+            <span>0${index + 1}</span>
+            <p>${escapeHtml(item.period)}</p>
+          </div>
+          <article class="experience-body">
+            <div class="experience-title-row">
+              <div>
+                <h3>${externalLink(item.organizationUrl, item.organization, "organization-link")}</h3>
+                <p class="organization-cn">${escapeHtml(item.organizationCn)}</p>
               </div>
-              <div class="entry-side">
-                <p>${escapeHtml(item.location)}</p>
-                <p>${escapeHtml(item.period)}</p>
-              </div>
+              ${item.featured ? '<span class="current-badge"><i></i> Current</span>' : ""}
             </div>
-            <ul class="bullet-list">
+            <p class="experience-role">${escapeHtml(item.role)} <span>·</span> ${escapeHtml(item.location)}</p>
+            <ul>
               ${item.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join("")}
             </ul>
           </article>
@@ -92,110 +127,118 @@
     )
     .join("");
 
-  const projectList = $("#project-list");
-  projectList.innerHTML = data.projects
+  const renderPublications = (items) =>
+    items
+      .map((item, index) => {
+        const title = item.link
+          ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)} <span aria-hidden="true">↗</span></a>`
+          : escapeHtml(item.title);
+        const statusClass = item.status.toLowerCase().replace(/\s+/g, "-");
+
+        return `
+          <li class="publication-item reveal">
+            <span class="publication-number">${String(index + 1).padStart(2, "0")}</span>
+            <article>
+              <div class="publication-meta">
+                <span>${escapeHtml(item.venue)} · ${escapeHtml(item.year)}</span>
+                <span class="publication-status status-${escapeHtml(statusClass)}">${escapeHtml(item.status)}</span>
+              </div>
+              <h3>${title}</h3>
+              <p>${item.authorsHtml}</p>
+            </article>
+          </li>
+        `;
+      })
+      .join("");
+
+  $("#representative-publications-list").innerHTML = renderPublications(data.representativePublications);
+  $("#full-publications-list").innerHTML = renderPublications(data.fullPublications);
+
+  $("#education-list").innerHTML = data.education
     .map(
       (item) => `
-        <article class="card cv-entry">
-          <div class="cv-entry-header">
-            <div class="cv-entry-main">
-              <h3>${escapeHtml(item.title)}</h3>
-              <p class="cv-entry-subtitle">${escapeHtml(item.description)}</p>
-            </div>
-            <div class="entry-side">
-              ${item.link ? renderExternalLink(item.link, item.linkLabel || "Link", "entry-link") : ""}
-            </div>
-          </div>
+        <article class="education-item">
+          <div class="education-period">${escapeHtml(item.period)}</div>
+          <h3>${escapeHtml(item.school)}</h3>
+          <p>${escapeHtml(item.degree)}</p>
+          ${item.note ? `<span>${escapeHtml(item.note)}</span>` : ""}
         </article>
       `
     )
     .join("");
 
-  const renderPublicationList = (items) => `
-    <ol class="pub-list">
-      ${items
-        .map(
-          (item) => `
-            <li class="card pub-item">
-              <p class="pub-title">${escapeHtml(item.title)}</p>
-              <p class="pub-authors">${item.authorsHtml}</p>
-              <div class="pub-meta-row">
-                <p class="pub-meta">
-                  <span class="pub-venue">${escapeHtml(item.venue)}</span>
-                  ${
-                    item.link
-                      ? ` · <a class="pub-link" href="${escapeHtml(item.link)}" target="_blank" rel="noreferrer">${escapeHtml(item.link)}</a>`
-                      : ""
-                  }
-                  ${item.extra ? ` <span class="pub-extra">${escapeHtml(item.extra)}</span>` : ""}
-                </p>
-                <span class="publication-year">${escapeHtml(item.year)}</span>
-              </div>
-            </li>
-          `
-        )
-        .join("")}
-    </ol>
+  const renderPlainList = (items) => items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  $("#services-list").innerHTML = renderPlainList(data.services);
+  $("#other-work-list").innerHTML = renderPlainList(data.otherWork);
+
+  $("#footer-links").innerHTML = `
+    <a href="${escapeHtml(profile.github)}" target="_blank" rel="noreferrer">GitHub ↗</a>
+    <a href="tel:${escapeHtml(profile.phone.replace(/\s/g, ""))}">${escapeHtml(profile.phone)}</a>
+    <span>${escapeHtml(profile.location)}</span>
   `;
 
-  $("#representative-publications-list").innerHTML = renderPublicationList(data.representativePublications);
-  $("#full-publications-list").innerHTML = renderPublicationList(data.fullPublications);
+  const revealElements = $$(".reveal");
 
-  $("#services-list").innerHTML = renderSimpleList(data.services);
-  $("#teaching-list").innerHTML = renderSimpleList(data.teaching);
-  $("#book-list").innerHTML = renderSimpleList(data.bookPublication);
-  $("#patents-list").innerHTML = renderSimpleList(data.patents);
-  $("#copyrights-list").innerHTML = renderSimpleList(data.softwareCopyrights);
-
-  $("#footer-contact-list").innerHTML = `
-    <li>${escapeHtml(profile.phone)}</li>
-    <li><a class="hero-inline-link" href="mailto:${escapeHtml(profile.email)}">${escapeHtml(profile.email)}</a></li>
-    <li><a class="hero-inline-link" href="${escapeHtml(profile.github)}" target="_blank" rel="noreferrer">${escapeHtml(profile.github)}</a></li>
-  `;
-
-  const navLinks = [...document.querySelectorAll(".nav-link")];
-  const observedSections = [...document.querySelectorAll("main .section, .footer")];
-
-  if ("IntersectionObserver" in window) {
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const revealObserver = new IntersectionObserver(
-      (entries) => {
+      (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
           }
         });
       },
-      {
-        threshold: 0.18,
-        rootMargin: "0px 0px -10% 0px",
-      }
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
     );
 
-    document.querySelectorAll(".reveal").forEach((section) => revealObserver.observe(section));
+    revealElements.forEach((element) => revealObserver.observe(element));
+  } else {
+    revealElements.forEach((element) => element.classList.add("is-visible"));
+  }
 
+  const navLinks = $$(".nav-link");
+  const sections = navLinks
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+
+  if ("IntersectionObserver" in window) {
     const navObserver = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          }
+        const visibleEntry = entries.find((entry) => entry.isIntersecting);
+        if (!visibleEntry) {
+          return;
+        }
 
-          const id = entry.target.id;
-          navLinks.forEach((link) => {
-            link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
-          });
+        navLinks.forEach((link) => {
+          link.classList.toggle("is-active", link.getAttribute("href") === `#${visibleEntry.target.id}`);
         });
       },
-      {
-        threshold: 0.35,
-        rootMargin: "-20% 0px -55% 0px",
-      }
+      { rootMargin: "-30% 0px -58% 0px", threshold: 0 }
     );
 
-    observedSections.forEach((section) => navObserver.observe(section));
-  } else {
-    document.querySelectorAll(".reveal").forEach((section) => section.classList.add("is-visible"));
+    sections.forEach((section) => navObserver.observe(section));
   }
+
+  let scrollTicking = false;
+  const updateProgress = () => {
+    const availableScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = availableScroll > 0 ? window.scrollY / availableScroll : 0;
+    document.documentElement.style.setProperty("--scroll-progress", progress);
+    scrollTicking = false;
+  };
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!scrollTicking) {
+        window.requestAnimationFrame(updateProgress);
+        scrollTicking = true;
+      }
+    },
+    { passive: true }
+  );
+  updateProgress();
 
   const ldScript = document.createElement("script");
   ldScript.type = "application/ld+json";
@@ -207,10 +250,16 @@
     email: `mailto:${profile.email}`,
     telephone: profile.phone,
     jobTitle: profile.role,
+    address: profile.location,
     affiliation: {
       "@type": "CollegeOrUniversity",
-      name: "Beijing University of Posts and Telecommunications",
+      name: profile.affiliation,
     },
+    worksFor: {
+      "@type": "Organization",
+      name: "Tencent Advertising",
+    },
+    knowsAbout: profile.researchAreas,
     sameAs: [profile.github],
   });
   document.head.appendChild(ldScript);

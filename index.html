@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fuqing Bie | Academic CV</title>
+    <title>Fuqing Bie | Agent & Reinforcement Learning Researcher</title>
     <meta
       name="description"
-      content="Academic CV and homepage for Fuqing Bie, PhD student at BUPT working on agents, reinforcement learning, MARL, and large model applications."
+      content="Fuqing Bie is a PhD researcher at BUPT working on LLM agents, reinforcement learning, multi-agent systems, and multimodal foundation models."
     />
-    <meta name="theme-color" content="#0e1516" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Fuqing Bie | Academic CV" />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Fuqing Bie | Agent & Reinforcement Learning Researcher" />
     <meta
       property="og:description"
-      content="Academic CV and homepage for Fuqing Bie, PhD student at BUPT working on agents, reinforcement learning, MARL, and large model applications."
+      content="Research on reliable LLM agents, reinforcement learning, and multimodal intelligence."
     />
     <meta property="og:image" content="./个人照.jpg" />
     <meta property="og:image:alt" content="Portrait of Fuqing Bie" />
@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -31,167 +31,189 @@
     </script>
   </head>
   <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <a class="brand" href="#top" aria-label="Back to top">
-          <span class="brand-mark">FB</span>
-          <span class="brand-copy">
-            <strong>Fuqing Bie</strong>
-            <span>Academic CV</span>
-          </span>
-        </a>
-        <nav class="nav" aria-label="Primary">
-          <a class="nav-link" href="#biography">Biography</a>
-          <a class="nav-link" href="#experience">Experience</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#representative-publications">Publications</a>
-          <a class="nav-link" href="#services">Service</a>
-          <a class="nav-link" href="#contact">Contact</a>
-        </nav>
-        <a class="nav-cta" id="topbar-email" href="mailto:biehenry9@gmail.com">Email</a>
-      </header>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="reading-progress" aria-hidden="true"></div>
 
-      <main>
-        <section class="hero reveal is-visible" id="top">
-          <div class="hero-copy hero-copy-compact">
-            <p class="eyebrow">Academic CV</p>
-            <div class="hero-heading">
-              <h1 id="profile-name">Fuqing Bie</h1>
-              <p class="hero-cn" id="profile-cn-name">别福庆</p>
-            </div>
-            <p class="hero-role" id="profile-role"></p>
-            <div class="hero-inline-list" id="profile-contact-list"></div>
-            <div class="hero-inline-list hero-inline-list-secondary" id="profile-academic-list"></div>
-            <div class="hero-actions">
-              <a class="button button-primary" id="hero-email" href="mailto:biehenry9@gmail.com">Email</a>
-              <a
-                class="button button-secondary"
-                id="hero-github"
-                href="https://github.com/fuqingbie"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub</a
-              >
-            </div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Fuqing Bie, back to top">
+        <span class="brand-mark">FB</span>
+        <span class="brand-copy">
+          <strong>Fuqing Bie</strong>
+          <span>Agent × RL Research</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#work">Selected work</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#publications">Publications</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+
+      <a class="topbar-cta" id="topbar-email" href="mailto:biehenry9@gmail.com">
+        Let&rsquo;s talk
+        <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal is-visible">
+          <div class="availability">
+            <span class="availability-dot" aria-hidden="true"></span>
+            <span id="profile-availability"></span>
           </div>
 
-          <div class="hero-visual">
-            <div class="hero-photo-panel">
-              <div class="photo-overlay-card">
-                <p class="photo-kicker">Academic Snapshot</p>
-                <p class="photo-claim" id="profile-claim"></p>
-              </div>
-              <div class="photo-stack"></div>
-              <img class="hero-photo" src="./个人照.jpg" alt="Portrait of Fuqing Bie" />
-            </div>
-          </div>
-        </section>
+          <p class="eyebrow">PhD researcher · Beijing, China</p>
+          <h1>
+            Building agents that
+            <em>reason, act &amp; improve.</em>
+          </h1>
+          <p class="hero-intro" id="profile-intro"></p>
 
-        <section class="section reveal" id="biography">
-          <div class="section-head section-head-simple">
-            <h2>Biography</h2>
-          </div>
-          <article class="card prose-card">
-            <p id="biography-text"></p>
-          </article>
-        </section>
-
-        <section class="section reveal" id="experience">
-          <div class="section-head section-head-simple">
-            <h2>Experience</h2>
-          </div>
-          <ol class="timeline" id="experience-timeline"></ol>
-        </section>
-
-        <section class="section reveal" id="projects">
-          <div class="section-head section-head-simple">
-            <h2>Projects</h2>
-          </div>
-          <div class="cv-stack" id="project-list"></div>
-        </section>
-
-        <section class="section reveal" id="representative-publications">
-          <div class="section-head section-head-simple">
-            <h2>Representative Publications as Core Contributor</h2>
-          </div>
-          <div id="representative-publications-list"></div>
-        </section>
-
-        <section class="section reveal" id="full-publications">
-          <div class="section-head section-head-simple">
-            <h2>Full Publications</h2>
-          </div>
-          <div id="full-publications-list"></div>
-        </section>
-
-        <section class="section reveal" id="services">
-          <div class="section-head section-head-simple">
-            <h2>Services</h2>
-          </div>
-          <article class="card list-card">
-            <ul class="simple-list" id="services-list"></ul>
-          </article>
-        </section>
-
-        <section class="section reveal" id="teaching">
-          <div class="section-head section-head-simple">
-            <h2>Teaching</h2>
-          </div>
-          <article class="card list-card">
-            <ul class="simple-list" id="teaching-list"></ul>
-          </article>
-        </section>
-
-        <section class="section reveal" id="book-publication">
-          <div class="section-head section-head-simple">
-            <h2>Book Publication</h2>
-          </div>
-          <article class="card list-card">
-            <ul class="simple-list" id="book-list"></ul>
-          </article>
-        </section>
-
-        <section class="section reveal" id="patents">
-          <div class="section-head section-head-simple">
-            <h2>Patents</h2>
-          </div>
-          <article class="card list-card">
-            <ul class="simple-list" id="patents-list"></ul>
-          </article>
-        </section>
-
-        <section class="section reveal" id="software-copyrights">
-          <div class="section-head section-head-simple">
-            <h2>Software Copyrights</h2>
-          </div>
-          <article class="card list-card">
-            <ul class="simple-list" id="copyrights-list"></ul>
-          </article>
-        </section>
-      </main>
-
-      <footer class="footer reveal" id="contact">
-        <div class="section-head section-head-simple">
-          <h2>Contact</h2>
-        </div>
-        <div class="footer-grid footer-grid-simple">
-          <article class="card list-card">
-            <ul class="simple-list simple-list-plain" id="footer-contact-list"></ul>
-          </article>
-          <div class="footer-links">
-            <a class="button button-primary" id="footer-email" href="mailto:biehenry9@gmail.com">Email</a>
+          <div class="hero-actions">
+            <a class="button button-primary" id="hero-email" href="mailto:biehenry9@gmail.com">
+              Start a conversation <span aria-hidden="true">↗</span>
+            </a>
             <a
-              class="button button-secondary"
-              id="footer-github"
+              class="button button-ghost"
+              id="hero-github"
               href="https://github.com/fuqingbie"
               target="_blank"
               rel="noreferrer"
-              >GitHub</a
             >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="hero-meta" id="profile-meta"></div>
+        </div>
+
+        <div class="hero-visual reveal is-visible">
+          <div class="portrait-frame">
+            <div class="portrait-index" aria-hidden="true">01 / PROFILE</div>
+            <img class="hero-photo" src="./个人照.jpg" alt="Fuqing Bie in Beijing" />
+            <div class="portrait-caption">
+              <span class="portrait-monogram" id="profile-monogram">别福庆</span>
+              <span id="profile-role"></span>
+            </div>
+          </div>
+          <div class="orbit-note orbit-note-top" aria-hidden="true">LLM AGENTS</div>
+          <div class="orbit-note orbit-note-bottom" aria-hidden="true">MULTIMODAL RL</div>
+        </div>
+
+        <div class="stat-strip reveal is-visible" id="profile-stats"></div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading reveal">
+          <p class="section-index">01 / Selected work</p>
+          <h2>Research made<br /><em>tangible.</em></h2>
+          <p>
+            From long-horizon information seeking to GUI agents and open-source RL infrastructure,
+            I work across research ideas, training systems, and evaluation.
+          </p>
+        </div>
+        <div class="project-grid" id="project-list"></div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading section-heading-inline reveal">
+          <div>
+            <p class="section-index">02 / Experience</p>
+            <h2>Research across<br /><em>models &amp; systems.</em></h2>
+          </div>
+          <p>
+            Industry research spanning agentic workflows, multimodal post-training, and
+            reinforcement learning platforms.
+          </p>
+        </div>
+        <ol class="experience-list" id="experience-list"></ol>
+      </section>
+
+      <section class="section" id="publications">
+        <div class="section-heading reveal">
+          <p class="section-index">03 / Publications</p>
+          <h2>Selected<br /><em>research.</em></h2>
+          <p>
+            Representative work as a lead author, core contributor, and open-source researcher.
+          </p>
+        </div>
+
+        <ol class="publication-list publication-list-featured" id="representative-publications-list"></ol>
+
+        <details class="all-publications reveal">
+          <summary>
+            <span>Complete publication record</span>
+            <span class="summary-count" id="publication-count"></span>
+            <span class="summary-icon" aria-hidden="true"></span>
+          </summary>
+          <ol class="publication-list publication-list-all" id="full-publications-list"></ol>
+        </details>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading section-heading-inline reveal">
+          <div>
+            <p class="section-index">04 / About</p>
+            <h2>Curious by nature.<br /><em>Rigorous by practice.</em></h2>
+          </div>
+          <p id="biography-text"></p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-panel education-panel reveal">
+            <div class="panel-heading">
+              <span>Education</span>
+              <span aria-hidden="true">04—A</span>
+            </div>
+            <div class="education-list" id="education-list"></div>
+          </article>
+
+          <div class="about-stack">
+            <article class="about-panel reveal">
+              <div class="panel-heading">
+                <span>Academic service</span>
+                <span aria-hidden="true">04—B</span>
+              </div>
+              <ul class="plain-list" id="services-list"></ul>
+            </article>
+
+            <article class="about-panel reveal">
+              <div class="panel-heading">
+                <span>Beyond papers</span>
+                <span aria-hidden="true">04—C</span>
+              </div>
+              <ul class="plain-list" id="other-work-list"></ul>
+            </article>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section class="contact-section reveal" id="contact">
+        <p class="section-index">05 / Contact</p>
+        <div class="contact-grid">
+          <h2>Let&rsquo;s build what<br />agents become <em>next.</em></h2>
+          <div class="contact-copy">
+            <p>
+              I am seeking full-time AGI research opportunities and am always open to thoughtful
+              collaborations around agents, reinforcement learning, and multimodal intelligence.
+            </p>
+            <a class="contact-email" id="footer-email" href="mailto:biehenry9@gmail.com">
+              <span id="footer-email-label">biehenry9@gmail.com</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <div class="contact-links" id="footer-links"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="current-year"></span> Fuqing Bie</p>
+      <p>Beijing · Agent research · Built with intent</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
 
     <script src="./data.js"></script>
     <script src="./main.js" defer></script>
