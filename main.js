@@ -101,6 +101,14 @@
           <li class="experience-item">
             <div class="experience-period">
               <span>${String(startingIndex + index + 1).padStart(2, "0")}</span>
+              <div class="experience-logo">
+                <img
+                  src="${escapeHtml(item.logo)}"
+                  alt="${escapeHtml(item.organization)} logo"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <p>${escapeHtml(item.period)}</p>
             </div>
             <article class="experience-content">
