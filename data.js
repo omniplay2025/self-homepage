@@ -2,10 +2,10 @@ window.siteData = {
   profile: {
     name: "Fuqing Bie",
     cnName: "别福庆",
-    role: "PhD Researcher · LLM Agents & Reinforcement Learning",
-    availability: "Open to full-time AGI research roles · Graduating Jun 2027",
+    role: "LLM Agent & Reinforcement Learning Researcher",
+    availability: "Open to full-time AGI research roles · Graduating June 2027",
     intro:
-      "I design reliable, long-horizon LLM agents and the training and evaluation systems that help them improve - spanning deep research, multimodal interaction, and reinforcement learning.",
+      "PhD candidate at BUPT with research experience at Tencent, Alibaba Cloud, Zhipu AI, and 4Paradigm. I build long-horizon agents, multimodal post-training systems, and evaluation benchmarks.",
     phone: "+86-178-6232-6340",
     email: "biehenry9@gmail.com",
     github: "https://github.com/fuqingbie",
